@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover electronics, fashion, home essentials and more at NESTORA.">
+    <title>NESTORA | Discover More. Shop Smarter.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/checkout.css">
+   
+</head>
+<body>
+
+    <!-- Announcement -->
+    <div class="announcement">
+        <p>✨ FESTIVE SHOPPING DAYS — Extra savings on your favourites</p>
+        <a href="#deals">Explore deals →</a>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <a href="#" class="brand">
+            <span class="brand-symbol">N</span>
+            <span class="brand-name">nestora<span class="brand-dot">.</span>
+                <small>DISCOVER MORE. SHOP SMARTER.</small>
+            </span>
+        </a>
+
+        <div class="delivery-location">
+            <span class="location-icon">⌖</span>
+            <div>
+                <small>Delivering to</small>
+                <strong>India <span>⌄</span></strong>
+            </div>
+        </div>
+
+        <form class="search-bar" id="searchForm">
+            <select id="searchCategory" aria-label="Search category">
+                <option value="all">All</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Home">Home</option>
+                <option value="Beauty">Beauty</option>
+            </select>
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search for products, brands and more..."
+                aria-label="Search products"
+            >
+            <button type="submit" aria-label="Search">⌕</button>
+        </form>
+
+        <div class="header-actions">
+            <button class="header-action" id="accountButton" type="button">
+                <span class="action-icon">♙</span>
+                <span class="action-label"><small>Hello, shopper</small><strong>Account</strong></span>
+            </button>
+
+            <a href="#orders" class="header-action orders-action">
+                <span class="action-icon">▤</span>
+                <span class="action-label"><small>Track your</small><strong>Orders</strong></span>
+            </a>
+
+            <button class="header-action cart-header-button" id="cartButton" type="button">
+                <span class="cart-icon-wrap">
+                    <span class="action-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </span>
+                <span class="action-label"><small>Your</small><strong>Cart</strong></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Category Navigation -->
+    <nav class="category-nav" aria-label="Product categories">
+        <div class="category-nav-inner">
+            <a href="#categories" class="nav-category active" data-category="all">☰ <span>All</span></a>
+            <a href="#products" class="nav-category" data-category="Electronics">▣ <span>Electronics</span></a>
+            <a href="#products" class="nav-category" data-category="Fashion">♧ <span>Fashion</span></a>
+            <a href="#products" class="nav-category" data-category="Home">⌂ <span>Home & Living</span></a>
+            <a href="#products" class="nav-category" data-category="Beauty">✦ <span>Beauty</span></a>
+            <a href="#products" class="nav-category" data-category="Accessories">◇ <span>Accessories</span></a>
+            <a href="#deals" class="nav-category deals-link">⚡ <span>Today's Deals</span></a>
+            <span class="nav-promo">FREE DELIVERY ON SELECTED ITEMS</span>
+        </div>
+    </nav>
+
+    <main class="page-container">
+
+        <!-- Hero Banner -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> THE BIG DISCOVERY SALE</span>
+                <h1>Good finds.<br><span>Great feelings.</span></h1>
+                <p>Refresh your everyday with handpicked favourites, exciting prices and little things that make a big difference.</p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="button button-primary">Shop collection <span>→</span></a>
+                    <a href="#categories" class="button button-glass">Explore categories</a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-avatars">
+                        <span>H</span><span>A</span><span>S</span>
+                    </div>
+                    <p><strong>10,000+</strong><br><small>happy discoveries</small></p>
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <div class="hero-orb orb-one"></div>
+                <div class="hero-orb orb-two"></div>
+
+                <div class="floating-card floating-card-top">
+                    <span>✦</span>
+                    <div><strong>New season</strong><small>Fresh arrivals</small></div>
+                </div>
+
+                <div class="hero-product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30a?auto=format&fit=crop&w=700&q=85"
+                        alt="Premium wireless headphones"
+                    >
+                    <div class="hero-product-label">
+                        <span>EDITOR'S PICK</span>
+                        <strong>Sound that moves you.</strong>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-bottom">
+                    <span class="discount-icon">%</span>
+                    <div><strong>Up to 60% off</strong><small>On selected finds</small></div>
+                </div>
+
+                <span class="hero-spark spark-one">✦</span>
+                <span class="hero-spark spark-two">✧</span>
+            </div>
+
+            <div class="hero-pagination">
+                <span class="pagination-active"></span><span></span><span></span>
+            </div>
+        </section>
+
+        <!-- Service Benefits -->
+        <section class="benefits-strip" aria-label="Shopping benefits">
+            <div class="benefit">
+                <span class="benefit-icon">↗</span>
+                <div><strong>Great prices</strong><small>Deals worth discovering</small></div>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">♧</span>
+                <div><strong>Quality picks</strong><small>Products you'll love</small></div>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">⇄</span>
+                <div><strong>Easy returns</strong><small>Shop with confidence</small></div>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">♡</span>
+                <div><strong>Made for you</strong><small>Everyday essentials</small></div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section-block" id="categories">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">A LITTLE BIT OF EVERYTHING</span>
+                    <h2>What are you looking for?</h2>
+                    <p>Find your next favourite in just a few clicks.</p>
+                </div>
+                <a href="#products" class="text-link">View all categories →</a>
+            </div>
+
+            <div class="category-grid">
+                <button class="category-tile category-electronics" data-category="Electronics">
+                    <span class="category-emoji">🎧</span>
+                    <span class="category-tile-title">Electronics</span>
+                    <small>Tech for every day</small>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-tile category-fashion" data-category="Fashion">
+                    <span class="category-emoji">👟</span>
+                    <span class="category-tile-title">Fashion</span>
+                    <small>Your style, your rules</small>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-tile category-home" data-category="Home">
+                    <span class="category-emoji">🪴</span>
+                    <span class="category-tile-title">Home & Living</span>
+                    <small>Make space yours</small>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-tile category-beauty" data-category="Beauty">
+                    <span class="category-emoji">🧴</span>
+                    <span class="category-tile-title">Beauty</span>
+                    <small>Little self-care moments</small>
+                    <span class="category-arrow">↗</span>
+                </button>
+
+                <button class="category-tile category-accessories" data-category="Accessories">
+                    <span class="category-emoji">⌚</span>
+                    <span class="category-tile-title">Accessories</span>
+                    <small>Details that stand out</small>
+                    <span class="category-arrow">↗</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Deal Banner -->
+        <section class="deal-banner" id="deals">
+            <div class="deal-banner-content">
+                <span class="deal-tag">LIMITED-TIME PICKS</span>
+                <h2>Little prices.<br>Big excitement.</h2>
+                <p>Discover today's handpicked deals before they're gone.</p>
+                <a href="#products" class="button button-light">Explore deals <span>→</span></a>
+            </div>
+            <div class="deal-banner-art">
+                <div class="deal-circle deal-circle-one"></div>
+                <div class="deal-circle deal-circle-two"></div>
+                <span class="deal-percent">UP TO<br><strong>60%</strong><br>OFF</span>
+                <span class="deal-decoration">✦</span>
+            </div>
+        </section>
+
+        <!-- Product Listing -->
+        <section class="section-block" id="products">
+            <div class="section-heading product-heading">
+                <div>
+                    <span class="section-kicker">YOUR NEXT GREAT FIND</span>
+                    <h2 id="productSectionTitle">Trending right now <span>✦</span></h2>
+                    <p id="productSectionSubtitle">Popular picks people are loving today.</p>
+                </div>
+
+                <div class="product-controls">
+                    <label for="sortSelect">Sort by</label>
+                    <select id="sortSelect">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Top Rated</option>
+                        <option value="discount">Biggest Discount</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="active-filters" id="activeFilters">
+                <button class="filter-chip selected" data-category="all">All products</button>
+                <button class="filter-chip" data-category="Electronics">Electronics</button>
+                <button class="filter-chip" data-category="Fashion">Fashion</button>
+                <button class="filter-chip" data-category="Home">Home & Living</button>
+                <button class="filter-chip" data-category="Beauty">Beauty</button>
+                <button class="filter-chip" data-category="Accessories">Accessories</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Product cards are rendered by products.js and app.js -->
+            </div>
+
+            <div class="empty-state" id="emptyState" hidden>
+                <span>⌕</span>
+                <h3>No products found</h3>
+                <p>Try another search or select a different category.</p>
+                <button class="button button-primary" id="clearFiltersButton">Show all products</button>
+            </div>
+
+            <div class="load-more-wrap">
+                <button class="button button-outline" id="loadMoreButton">Discover more products ↓</button>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter-section">
+            <div class="newsletter-icon">✉</div>
+            <div class="newsletter-copy">
+                <span class="section-kicker">GOOD THINGS IN YOUR INBOX</span>
+                <h2>A little inspiration, delivered.</h2>
+                <p>Get new arrivals, special offers and fresh finds. No noise, just the good stuff.</p>
+            </div>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                <button type="submit">Join us →</button>
+            </form>
+        </section>
+
+        <!-- Orders Placeholder -->
+        <section class="order-info" id="orders">
+            <span>📦</span>
+            <div>
+                <strong>Your next order starts here.</strong>
+                <p>Sign in and place an order to see your order history here.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-brand-column">
+                <a href="#" class="brand footer-brand">
+                    <span class="brand-symbol">N</span>
+                    <span class="brand-name">nestora<span class="brand-dot">.</span>
+                        <small>DISCOVER MORE. SHOP SMARTER.</small>
+                    </span>
+                </a>
+                <p>Everyday discoveries, thoughtfully brought together. Find what you love and make it yours.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">ig</a>
+                    <a href="#" aria-label="Facebook">f</a>
+                    <a href="#" aria-label="X">𝕏</a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Shop</h3>
+                <a href="#products" data-footer-category="Electronics">Electronics</a>
+                <a href="#products" data-footer-category="Fashion">Fashion</a>
+                <a href="#products" data-footer-category="Home">Home & Living</a>
+                <a href="#products" data-footer-category="Beauty">Beauty</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Help & support</h3>
+                <a href="#orders">Track an order</a>
+                <a href="#orders">Returns & refunds</a>
+                <a href="#orders">Shipping information</a>
+                <a href="mailto:support@nestora.example">Contact us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>About Nestora</h3>
+                <a href="#categories">Our collections</a>
+                <a href="#deals">Today's deals</a>
+                <a href="#categories">Discover more</a>
+                <a href="#newsletterForm">Newsletter</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© <span id="currentYear"></span> NESTORA. Demo e-commerce website.</p>
+            <p>Designed with care <span>♥</span></p>
+        </div>
+    </footer>
+
+    <!-- Cart Overlay -->
+    <div class="overlay" id="cartOverlay"></div>
+
+    <!-- Cart Drawer -->
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <div>
+                <span class="section-kicker">YOUR SELECTION</span>
+                <h2>Your cart <span id="drawerCartCount">(0)</span></h2>
+            </div>
+            <button class="close-cart" id="closeCartButton" aria-label="Close cart">×</button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items rendered by cart.js -->
+        </div>
+
+        <div class="cart-empty" id="cartEmpty">
+            <span>🛍️</span>
+            <h3>Your cart is waiting</h3>
+            <p>Find something you'll love and add it here.</p>
+            <button class="button button-primary" id="continueShoppingButton">Explore products</button>
+        </div>
+
+        <div class="cart-summary" id="cartSummary">
+            <div class="cart-summary-row"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div>
+            <div class="cart-summary-row"><span>Delivery</span><strong class="free-delivery">FREE</strong></div>
+            <div class="cart-summary-row cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div>
+            <p class="cart-note">Taxes and final charges can be calculated at checkout.</p>
+            <button class="button button-primary checkout-button" id="checkoutButton">Proceed to checkout →</button>
+        </div>
+    </aside>
+
+
+    <!-- Authentication dialog: keeps the original storefront CSS unchanged. -->
+    <dialog id="authDialog" style="width:min(92vw,440px);border:0;border-radius:18px;padding:26px;margin:auto;box-shadow:0 20px 70px #101b3b33;color:#202944">
+        <form id="authForm">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px">
+                <h2 id="authTitle">Sign in to NESTORA</h2>
+                <button type="button" id="closeAuthButton" aria-label="Close" style="border:0;background:transparent;font-size:26px">×</button>
+            </div>
+            <p id="authDescription" style="margin-bottom:16px;color:#7d879e">Access your cart and order history.</p>
+            <label id="authNameLabel" for="authName" hidden style="display:block;margin:10px 0 5px">Full name</label>
+            <input id="authName" name="name" autocomplete="name" placeholder="Your full name" hidden style="width:100%;padding:12px;border:1px solid #e0e6f5;border-radius:10px;margin-bottom:10px">
+            <label for="authEmail" style="display:block;margin:10px 0 5px">Email</label>
+            <input id="authEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com" style="width:100%;padding:12px;border:1px solid #e0e6f5;border-radius:10px;margin-bottom:10px">
+            <label for="authPassword" style="display:block;margin:10px 0 5px">Password</label>
+            <input id="authPassword" name="password" type="password" autocomplete="current-password" minlength="8" required placeholder="At least 8 characters" style="width:100%;padding:12px;border:1px solid #e0e6f5;border-radius:10px;margin-bottom:16px">
+            <button class="button button-primary" id="authSubmitButton" type="submit" style="width:100%">Sign in</button>
+            <p style="margin-top:16px;text-align:center"><span id="authSwitchText">New to NESTORA?</span> <button type="button" id="authSwitchButton" style="border:0;background:transparent;color:#3858f5;font-weight:700">Create account</button></p>
+        </form>
+    </dialog>
+
+   
+<!-- NESTORA Multi-Step Checkout -->
+<dialog id="checkoutDialog" class="checkout-dialog">
+    <div class="checkout-header">
+        <div>
+            <span class="checkout-kicker">NESTORA CHECKOUT</span>
+            <h2 id="checkoutTitle">Shipping Address</h2>
+        </div>
+        <button type="button" id="closeCheckoutButton"
+                class="checkout-close" aria-label="Close checkout">×</button>
+    </div>
+
+    <div class="checkout-steps">
+        <div class="checkout-step active" data-step-indicator="1">
+            <span>1</span> Shipping
+        </div>
+        <div class="checkout-step" data-step-indicator="2">
+            <span>2</span> Billing
+        </div>
+        <div class="checkout-step" data-step-indicator="3">
+            <span>3</span> Payment
+        </div>
+    </div>
+
+    <form id="checkoutForm">
+        <!-- STEP 1: SHIPPING -->
+        <section class="checkout-panel" data-step="1">
+            <h3>Delivery Information</h3>
+            <p class="checkout-muted">Where should we deliver your order?</p>
+
+            <label for="shippingName">Full Name *</label>
+            <input id="shippingName" name="shippingName"
+                   autocomplete="name" maxlength="100" required>
+
+            <label for="shippingEmail">Email Address *</label>
+            <input id="shippingEmail" name="shippingEmail"
+                   type="email" autocomplete="email" maxlength="254" required>
+
+            <label for="shippingPhone">Phone Number *</label>
+            <input id="shippingPhone" name="shippingPhone"
+                   type="tel" autocomplete="tel"
+                   pattern="[0-9+() -]{7,20}" maxlength="20" required>
+
+            <label for="shippingAddress">House No. / Street Address *</label>
+            <textarea id="shippingAddress" name="shippingAddress"
+                      autocomplete="street-address"
+                      maxlength="1000" rows="3" required></textarea>
+
+            <div class="checkout-two-columns">
+                <div>
+                    <label for="shippingCity">City *</label>
+                    <input id="shippingCity" name="shippingCity"
+                           autocomplete="address-level2" required>
+                </div>
+                <div>
+                    <label for="shippingState">State *</label>
+                    <input id="shippingState" name="shippingState"
+                           autocomplete="address-level1" required>
+                </div>
+            </div>
+
+            <div class="checkout-two-columns">
+                <div>
+                    <label for="shippingPincode">PIN Code *</label>
+                    <input id="shippingPincode" name="shippingPincode"
+                           inputmode="numeric" pattern="[0-9]{6}"
+                           maxlength="6" autocomplete="postal-code" required>
+                </div>
+                <div>
+                    <label for="shippingCountry">Country</label>
+                    <input id="shippingCountry" name="shippingCountry"
+                           value="India" readonly>
+                </div>
+            </div>
+
+            <button type="button" class="button button-primary checkout-next"
+                    data-next="2">Continue to Billing →</button>
+        </section>
+
+        <!-- STEP 2: BILLING -->
+        <section class="checkout-panel" data-step="2" hidden>
+            <h3>Billing & Order Summary</h3>
+            <p class="checkout-muted">Review your delivery and order details.</p>
+
+            <label class="checkout-checkbox">
+                <input type="checkbox" id="sameAsShipping" checked>
+                Billing address same as shipping address
+            </label>
+
+            <div id="billingFields" hidden>
+                <label for="billingName">Billing Full Name *</label>
+                <input id="billingName" name="billingName"
+                       maxlength="100" disabled>
+
+                <label for="billingAddress">Billing Street Address *</label>
+                <textarea id="billingAddress" name="billingAddress"
+                          maxlength="1000" rows="3" disabled></textarea>
+
+                <div class="checkout-two-columns">
+                    <div>
+                        <label for="billingCity">Billing City *</label>
+                        <input id="billingCity" name="billingCity" disabled>
+                    </div>
+                    <div>
+                        <label for="billingState">Billing State *</label>
+                        <input id="billingState" name="billingState" disabled>
+                    </div>
+                </div>
+
+                <div class="checkout-two-columns">
+                    <div>
+                        <label for="billingPincode">Billing PIN Code *</label>
+                        <input id="billingPincode" name="billingPincode"
+                               inputmode="numeric" pattern="[0-9]{6}"
+                               maxlength="6" disabled>
+                    </div>
+                    <div>
+                        <label for="billingCountry">Billing Country</label>
+                        <input id="billingCountry" name="billingCountry"
+                               value="India" disabled>
+                    </div>
+                </div>
+            </div>
+
+            <div id="checkoutOrderItems" class="checkout-order-items"></div>
+
+            <div class="checkout-totals">
+                <div><span>Subtotal</span><strong id="checkoutSubtotal">₹0.00</strong></div>
+                <div><span>Delivery</span><strong id="checkoutDelivery">FREE</strong></div>
+                <div class="checkout-grand-total">
+                    <span>Total Amount</span>
+                    <strong id="checkoutTotal">₹0.00</strong>
+                </div>
+            </div>
+
+            <div class="checkout-actions">
+                <button type="button" class="button button-outline"
+                        data-back="1">← Back</button>
+                <button type="button" class="button button-primary"
+                        data-next="3">Continue to Payment →</button>
+            </div>
+        </section>
+
+        <!-- STEP 3: PAYMENT -->
+        <section class="checkout-panel" data-step="3" hidden>
+            <h3>Choose Payment Method</h3>
+            <p class="checkout-muted">Select how you want to pay.</p>
+
+            <label class="payment-option">
+                <input type="radio" name="paymentMethod"
+                       value="cod" checked>
+                <span>
+                    <strong>Cash on Delivery</strong>
+                    <small>Pay when your order arrives.</small>
+                </span>
+            </label>
+
+            <label class="payment-option">
+                <input type="radio" name="paymentMethod"
+                       value="online">
+                <span>
+                    <strong>Online Payment</strong>
+                    <small>Continue to a payment gateway when integrated.</small>
+                </span>
+            </label>
+
+            <div id="onlinePaymentNotice" class="checkout-notice" hidden>
+                Online payment processing is not connected yet.
+                Choose Cash on Delivery for this frontend demonstration.
+            </div>
+
+            <div class="checkout-totals">
+                <div><span>Amount to Pay</span><strong id="paymentTotal">₹0.00</strong></div>
+            </div>
+
+            <label class="checkout-checkbox checkout-terms">
+                <input type="checkbox" id="acceptTerms" required>
+                I confirm that my shipping, billing and order details are correct.
+            </label>
+
+            <div class="checkout-actions">
+                <button type="button" class="button button-outline"
+                        data-back="2">← Back</button>
+                <button type="submit" id="placeOrderButton"
+                        class="button button-primary">Place Order</button>
+            </div>
+        </section>
+
+        <!-- ORDER CONFIRMATION -->
+        <section class="checkout-panel" data-step="4" hidden>
+            <div class="order-success">
+                <div class="order-success-icon">✓</div>
+                <h3>Thank You for Your Order!</h3>
+                <p id="orderConfirmationMessage">
+                    Your order details have been prepared.
+                </p>
+                <p>Order Reference: <strong id="orderReference"></strong></p>
+                <p>Total: <strong id="confirmationTotal"></strong></p>
+                <button type="button" id="finishCheckoutButton"
+                        class="button button-primary">
+                    Continue Shopping
+                </button>
+            </div>
+        </section>
+    </form>
+</dialog>
+
+<!-- Add these scripts after your existing scripts. -->
+
+
+
+    <!-- Toast -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <!-- These files connect the existing storefront to the Node.js/MySQL backend. -->
+    <script src="js/api.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
