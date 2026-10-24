@@ -18,8 +18,8 @@ NESTORA is an e-commerce website that allows users to browse products, add items
 ## Technologies Used
 
 - **Frontend:** HTML5, CSS3, JavaScript
-- **Backend:** API-based backend integration
-- **Database:** Depends on the configured backend
+- **Backend:** API-based backend integration(Node.js)
+- **Database:** Depends on the configured backend(Mysql)
 - **Development Tools:** Visual Studio Code, Git, GitHub
 - **Frontend Server:** Live Server
 
